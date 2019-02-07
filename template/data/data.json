@@ -1,0 +1,28 @@
+{
+    "data" : [
+    {
+        "imag": "vendor/imag/imag1.png", 
+        "title": "Card 1", 
+        "content": "a",
+        "href": "#",
+        "action": "This is a link",
+        "carousel": "active" 
+    },
+    {
+        "imag": "vendor/imag/imag2.png", 
+        "title": "Card 2", 
+        "content": "a",
+        "href": "#",
+        "action": "This is a link",
+        "carousel": " " 
+    },
+    {
+        "imag": "vendor/imag/imag3.png", 
+        "title": "Card 3", 
+        "content": "a",
+        "href": "#",
+        "action": "This is a link",
+        "carousel": " " 
+    }
+    ]
+}

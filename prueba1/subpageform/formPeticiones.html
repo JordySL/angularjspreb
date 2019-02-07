@@ -1,0 +1,141 @@
+<div ng-controller="peticionCtrl">
+        <div class="row col-12">
+                <div class="col-5"></div>
+                <h3 class="col-4">Nueva Peticion</h3>
+        </div>
+        <br>
+    
+        <div class="row col-12">
+          <div class="col-2">
+                <label>Fecha de Apertura</label>
+            </div>
+            <div class="col-4">
+                <input type="date" class="form-control" id="FechaApertura" ng-model="P.FechaAperturanot">
+            </div>
+            <div class="col-2">
+                <label>Fecha de Vencimiento</label>
+            </div>
+            <div class="col-4">
+                <input type="date" class="form-control" id="FechaVencimiento" ng-model="P.FechaVencimientonot">
+            </div>
+        </div>
+    
+        <div class="row col-12">
+          <div class="col-2">
+                <label>Tipo</label>
+            </div>
+            <div class="col-4">
+                <select class="form-control" id="Tipo" ng-model="P.IdTipo">
+                    <option value="1">Incidencia</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label>Categoria</label>
+            </div>
+            <div class="col-4">
+                <select class="form-control" id="Categoria" ng-model="P.IdCategoria">
+                    <option value="1">- - - -</option>
+                </select>
+            </div>
+        </div>
+        <br>
+    
+        <div class="row col-12">
+                <h5 class="col-2">Actores</h5>
+                <h3 class="col-6">Solicitante</h3>
+                <h3 class="col-4">Asignadar a</h3>
+        </div>
+        <br>
+    
+        <div class="row col-12">
+            <div class="col-2">
+                Nombres
+                </div>
+            <div class="col-4">
+                <select class="form-control" id="NombreSolicitante" ng-model="P.Solicitante">
+                    <option value="1">- - - -</option>
+                </select>
+            </div>
+            <div class="col-2">
+                </div>
+            <div class="col-4">
+                <select class="form-control" id="NombreAsignado" ng-model="P.Asginado">
+                    <option value="1">- - - -</option>
+                </select>
+            </div>
+        </div>
+        <br>
+    
+        <div class="row col-12">
+          <div class="col-2">
+              Corres Electronicos
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control" id="EmailSolicitante" ng-model="P.SolicitanteCorreo">
+            </div>
+            <div class="col-2">
+                </div>
+            <div class="col-4">
+                <input type="text" class="form-control" id="EmailAsignado" ng-model="P.AsginadoCorreo">
+            </div>
+        </div>
+        <br>
+    
+        <div class="row col-12">
+          <div class="col-2">
+                <label>Estado</label>
+            </div>
+            <div class="col-4">
+                <select class="form-control" id="Estado" ng-model="P.IdEstado">
+                    <option value="0">Nuevo</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label>Origen de la Peticion</label>
+            </div>
+            <div class="col-4">
+                <select class="form-control" id="OrigenPeticion" ng-model="P.OrigenPeticion">
+                    <option value="0">Telefono</option>
+                </select>
+            </div>
+        </div>
+        <br>
+    
+        <div class="row col-12">
+          <div class="col-2">
+                <label>Ubicacion</label>
+            </div>
+            <div class="col-4">
+                <select class="form-control" id="Ubicacion" ng-model="P.Ubicacion">
+                    <option value="0">- - - -</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        
+        <div class="row col-12">
+            <div class="col-2">
+                <label>Titulo</label>
+            </div>
+            <div class="col-10">
+                <input type="text" class="form-control" id="Titulo" ng-model="P.Titulo">
+            </div>
+        </div>
+        <br>
+    
+        <div class="row col-12">
+            <div class="col-2">
+                <label>Descripcion</label>
+            </div>
+            <div class="col-10">
+                <textarea class="form-control" id="Descripcion" rows="2" ng-model="P.Descripcion"></textarea>
+            </div>
+        </div>
+        <br>
+    
+        <div class="row col-12">
+                <div class="col-4"></div>
+                <input type="button" class="btn btn-success  col-4" ng-click="formPeticion(P)" value="Añadir Peticion">
+        </div>   
+         
+</div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet shortcut icon" href="vendor/bootstrap-library/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet shortcut icon" href="vendor/jquery-library/css/jquery.mCustomScrollbar.min.css" />
+    <!--<link type="text/css" rel="stylesheet" href="vendor/css/css/test.css" /> -->
+    <link type="text/css" rel="stylesheet shortcut icon" href="vendor/css/menu-sidebar/menu.css" />
+    <title>Template</title>
+</head>
+<body>
+    <div class="container-fluid" ng-controller="myControllerMain">
+        <div class="card">
+             <div ng-include="'menu/menu.html'"></div>
+        </div>
+<!--    <div class="card">
+            <div ng-include="'navbar/Navbar.html'"></div>
+        </div>
+        <br><br><br>
+        <div class="card">
+            <div ui-view></div>
+        </div>
+        <div class="card">
+            <div ng-include="'subfooter/Footer.html'"></div> 
+        </div>  -->
+    </div>
+</body>
+    <!--Library Jquery-->
+        <!--<script type="text/javascript" src="vendor/jquery-library/js/jquery-3.3.1.min.js"></script>-->
+        <script type="text/javascript" src="vendor/font/fontawesome.js"></script>
+        <script type="text/javascript" src="vendor/font/solid.js"></script>
+        <script type="text/javascript" src="vendor/jquery-library/js/jquery-3.3.1.slim.min.js"></script>
+        <script type="text/javascript" src="vendor/jquery-library/js/popper.min.js"></script>
+        <script type="text/javascript" src="vendor/jquery-library/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--Library AngularJS-->
+        <script type="text/javascript" src="vendor/angularjs-library/angular.min.js"></script> 
+        <!-- <script type="text/javascript" src="vendor/angularjs-library/angular-route.min.js"></script> -->
+        <script type="text/javascript" src="vendor/angularjs-library/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="vendor/angularjs-library/angular-resource.min.js"></script> 
+        <script type="text/javascript" src="vendor/bootstrap-library/bootstrap.min.js"></script>
+    <!--function-->
+        <script type="text/javascript" src="vendor/angularjs/module/myModule.js"></script>
+        <script type="text/javascript" src="vendor/angularjs/routing/myRouting.js"></script>
+        <script type="text/javascript" src="vendor/angularjs/service/myService.js"></script>
+        <script type="text/javascript" src="vendor/angularjs/controller/myControllerMain.js"></script>
+</html>

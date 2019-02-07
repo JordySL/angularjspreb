@@ -1,0 +1,18 @@
+<div class="card container">
+    <div class="row">
+        <input class="form-control" type="text" id="search" ng-model="searchText" placeholder="Busca ISO por ..">
+   </div>
+   <div class="row">
+       <div class="card col-12 col-sm-4" ng-repeat="dat in data | filter : searchText | orderBy : imag">
+           <br>
+           <img class="card-img-top" ng-src="{{dat.imag}}" alt="Card image cap">
+           <div class="card-body">
+               <h4 class="card-title">{{dat.title}}</h4>
+               <p class="card-text">
+                   {{dat.content}}
+               </p>
+               <a class="btn btn-primary" ng-href="{{dat.href}}" >{{dat.action}}</a>
+           </div>
+       </div>
+   </div>
+</div>

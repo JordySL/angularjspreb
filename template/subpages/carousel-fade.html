@@ -1,0 +1,20 @@
+<div class="container d-flex flex-wrap align-content-center">
+  <!--<div class="h-50 d-inline-block container-fluid " style="width:60%;" ng-if="Screen[1]" ng-include="'body/carousel-fade.html'"> -->
+    <div class="h-50 d-inline-block container-fluid " style="width:60%;" >
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div ng-repeat="dat in data" class="carousel-item {{dat.carousel}}">
+            <img class="d-block w-100" ng-src="{{dat.imag}}" alt="Second slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev btn" ng-click="Carousel(1)"  role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next btn" ng-click="Carousel(0)" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+  </div> 
+</div>

@@ -1,0 +1,51 @@
+//@import "../menu-sidebar/menu.css";
+$color :(red,blue,green);
+@mixin sexy-border($color, $width) {
+    border: {
+      color: $color;
+      width: $width;
+      style: dashed;
+    }
+  }
+
+  @each $c in  $color {
+    p { 
+      @include sexy-border($c , 1in);
+    }
+  } 
+
+$grid-width: 40px;
+$gutter-width: 10px;
+ 
+@function grid-width($n) {
+  @return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+ 
+#sidebar { width: grid-width(5); }
+
+@mixin box-shadow($shadows...) {
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+  }
+   
+  .shadows {
+    @include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
+  }
+
+  $type: monster;
+  p {
+    @if $type == ocean {
+      color: blue;
+    } @else if $type == matador {
+      color: red;
+    } @else if $type == monster {
+      color: green;
+    } @else {
+      color: black;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    .item-#{$i} { width: 2em * $i; }
+  } 

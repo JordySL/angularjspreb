@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title of the document</title>
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="jquery/datatable/jquery.dataTables.min.css" />
+    </head>
+
+    <body >
+        <header ng-include="'template/nav.html'"></header>
+        <div class="container">
+            <div ui-view></div>
+        </div>
+        <br>
+    </body>
+        <!--Library-->
+        <script type="text/javascript" src="bootstrap/jquery-3.3.1.slim.min.js"></script>
+        <script type="text/javascript" src="bootstrap/popper.min.js" ></script>
+        <script type="text/javascript" src="bootstrap/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="jquery/datatable/jquery.dataTables.min.js" ></script>
+        <script type="text/javascript" src="angularjs/angular.min.js" ></script> 
+        <script type="text/javascript" src="angularjs/angular-ui-router.min.js" ></script>
+        <script type="text/javascript" src="angularjs/angular-resource.min.js" ></script>
+        <script type="text/javascript" src="angularjs/datatable/angular-datatables.min.js" ></script>
+        <!--funtions--> 
+        <script type="text/javascript" src="js/module/myModule.js" ></script>
+        <script type="text/javascript" src="js/routing/myRouting.js" ></script>
+        <script type="text/javascript" src="js/service/myService.js" ></script>
+        <script type="text/javascript" src="js/controller/peticionCtrl.js" ></script>
+        <script type="text/javascript" src="js/controller/catalogoCtrl.js" ></script>
+        
+</html>
